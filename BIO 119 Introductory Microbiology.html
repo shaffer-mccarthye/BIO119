@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BIO 119 Introductory Microbiology</title>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("bio119-theme")||"light"}catch(e){}</script>
+<style>
+:root{--p:#0047AB;--a:#00a86b;--ad:#006b45;--bg:#f4f7fb;--cd:#fff;--tx:#1a2230;--mu:#465366;--bd:#c5d0de;--lk:#0047AB;--fc:#0047AB}
+[data-theme=dark]{--bg:#0f1620;--cd:#18222f;--tx:#e8edf3;--mu:#b4c0cf;--bd:#3a4b62;--lk:#8db8ff;--ad:#4fdc9f;--fc:#8db8ff}
+*{box-sizing:border-box}
+body{margin:0;font:1rem/1.55 Arial,Helvetica,sans-serif;background:var(--bg);color:var(--tx)}
+h1,h2,h3{font-family:Georgia,serif;line-height:1.25;margin:0 0 .5rem}
+h2{font-size:1.6rem}h3{font-size:1.1rem}
+a{color:var(--lk)}
+:focus-visible{outline:3px solid var(--fc);outline-offset:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;color:#000;padding:8px;z-index:20}
+header{position:sticky;top:0;z-index:10;background:var(--p);color:#fff;display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;padding:.6rem 1rem}
+header :focus-visible{outline-color:#fff}
+.badge{background:#fff;color:var(--p);font-weight:700;padding:.2rem .6rem;border-radius:.4rem}
+header h1{font-size:1.2rem;margin:0}
+.sub{font-size:.85rem;flex:1 1 12rem}
+button,select,input{font:inherit}
+.btn,#th{background:#fff;color:var(--p);border:2px solid #fff;border-radius:.4rem;padding:.35rem .8rem;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
+main,footer{max-width:72rem;margin:0 auto;padding:0 1rem}
+section,details.sec{margin:1.75rem 0}
+.hero{background:linear-gradient(135deg,var(--p),#003580);color:#fff;border-radius:.75rem;padding:1.5rem;margin-top:1.25rem}
+.hero p{max-width:50rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;padding:0;list-style:none;margin:.75rem 0 0}
+.chips li{background:#fff;color:#12305f;border-radius:2rem;padding:.2rem .8rem;font-weight:700;font-size:.9rem}
+.bars{display:flex;flex-wrap:wrap;gap:.5rem}
+.bars button{flex:1 1 9rem;text-align:left;background:var(--cd);color:var(--tx);border:1px solid var(--bd);border-top:10px solid var(--c);border-radius:.5rem;padding:.5rem .7rem;cursor:pointer}
+.bars button[aria-pressed=true]{outline:3px solid var(--fc)}
+.bars b{display:block}.bars small{color:var(--mu)}
+.note{background:var(--cd);border:2px solid var(--a);border-left-width:10px;border-radius:.5rem;padding:.8rem 1rem}
+.tools{display:flex;flex-wrap:wrap;gap:.75rem;margin:.75rem 0}
+.tools label{display:flex;flex-direction:column;font-weight:700;font-size:.9rem}
+.tools input,.tools select{padding:.4rem;border:2px solid var(--bd);border-radius:.4rem;background:var(--cd);color:var(--tx);min-width:14rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,19rem),1fr));gap:1rem}
+.card{background:var(--cd);border:1px solid var(--bd);border-top:8px solid var(--c);border-radius:.6rem;padding:1rem;display:flex;flex-direction:column;gap:.5rem}
+.card p{margin:0}
+.card.ex{border-style:dashed;border-top-style:solid}
+.row{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}
+.num{background:var(--p);color:#fff;font-weight:700;border-radius:.4rem;padding:.1rem .5rem}
+.tag{border:2px solid var(--c);border-radius:.4rem;padding:0 .4rem;font-size:.8rem;font-weight:700}
+.kt{background:var(--bg);border:1px solid var(--bd);border-radius:1rem;padding:0 .6rem;font-size:.8rem}
+.ob{background:var(--ad);color:#fff;border-radius:.3rem;padding:0 .4rem;font-size:.8rem;font-weight:700}
+[data-theme=dark] .ob{color:#05281a}
+.mu{color:var(--mu);font-size:.9rem}
+.go{margin-top:auto}
+.go .btn{background:var(--p);color:#fff;border-color:var(--p)}
+.go a.l{margin-left:.5rem}
+.hidden{display:none}
+summary{cursor:pointer;font:700 1.5rem Georgia,serif;padding:.25rem 0}
+table{border-collapse:collapse;width:100%;background:var(--cd)}
+th,td{border:1px solid var(--bd);padding:.4rem .6rem;text-align:left}
+caption{text-align:left;font-weight:700;padding:.3rem 0}
+.wrap{overflow-x:auto}
+ol.lo{list-style:none;padding:0;display:grid;gap:.6rem}
+ol.lo li{display:flex;gap:.7rem;align-items:flex-start;background:var(--cd);border:1px solid var(--bd);border-radius:.5rem;padding:.6rem}
+.ref{padding-left:2rem;text-indent:-2rem;margin:.5rem 0}
+footer{border-top:2px solid var(--bd);padding:1rem;margin-top:2rem;color:var(--mu)}
+@media(prefers-reduced-motion:no-preference){.card{transition:box-shadow .2s}.card:hover{box-shadow:0 4px 14px #0003}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header>
+<span class="badge">BIO 119</span>
+<h1>Introductory Microbiology</h1>
+<p class="sub">Moraine Valley Community College · Biology · In person, 4 credit hours</p>
+<button id="th" type="button" aria-pressed="false">Dark mode</button>
+</header>
+<main id="main">
+<section class="hero" aria-labelledby="hero-h">
+<h2 id="hero-h">Welcome to microbiology</h2>
+<p>You will explore the bacteria, archaea, fungi, protozoa, algae, helminths, viruses, prions, and viroids that shape health and disease. Each week pairs a lecture lesson with a hands-on lab, and your labs build toward identifying an unknown bacterium using data and evidence. Along the way you will build scientific literacy, study habits, and aseptic technique for future nursing and health programs.</p>
+<ul class="chips" aria-label="Quick facts"><li>In person</li><li>3 h lecture + 3 h lab weekly</li><li>16 weeks</li><li>16 activities</li><li>16 labs</li><li>6 exams</li></ul>
+</section>
+
+<section aria-labelledby="dom-h">
+<h2 id="dom-h">Content domains</h2>
+<p class="mu">Select a unit to filter the cards below. Select it again to show everything.</p>
+<div class="bars" id="bars"></div>
+</section>
+
+<section class="note" aria-labelledby="st-h">
+<h2 id="st-h">How to begin</h2>
+<p>First, pass the Lab Safety quiz in Canvas, because it is required to take part in the course. Then read Chapter 1 in the free OpenStax textbook and open <a href="#weeks">Week 1</a>. Plan about 8 hours of study outside class each week.</p>
+</section>
+
+<section aria-labelledby="f-h">
+<h2 id="f-h">Find a card</h2>
+<div class="tools" role="search">
+<label>Search cards<input id="q" type="search" placeholder="Try “gram stain”"></label>
+<label>Filter by unit<select id="uf"></select></label>
+</div>
+<p id="cnt" class="mu" role="status" aria-live="polite"></p>
+</section>
+
+<details class="sec" open id="weeks"><summary>Course weeks</summary><div class="grid" id="wg"></div></details>
+<details class="sec" open id="acts"><summary>Student activities</summary><div class="grid" id="ag"></div></details>
+<details class="sec" open id="labs"><summary>Labs</summary><div class="grid" id="lg"></div></details>
+
+<details class="sec" open id="outcomes"><summary>Learning outcomes</summary>
+<h3>Common Learning Outcome (CLO)</h3>
+<ol class="lo"><li><span class="ob">CLO 5</span><span><b>Quantitative Literacy:</b> Use processes, procedures, data, or evidence to solve problems and make effective decisions. You build this skill through sequential labs and tests that identify an unknown microbe. The other four institutional CLOs are not targeted in this course.</span></li></ol>
+<h3>Program Learning Outcomes (PLOs)</h3>
+<ol class="lo">
+<li><span class="ob">PLO 1</span><span>Apply processes, procedures, data, or evidence to solve problems and make effective decisions. (Apply)</span></li>
+<li><span class="ob">PLO 2</span><span>Demonstrate the ability to safely and effectively handle and culture microorganisms in the laboratory setting. (Apply)</span></li>
+<li><span class="ob">PLO 3</span><span>Demonstrate the ability to work effectively with others in group projects and laboratory exercises. (Apply)</span></li>
+</ol>
+</details>
+
+<details class="sec" open id="assess"><summary>Assessment overview</summary>
+<p>You can earn 1,000 points. The course has six unit exams and no cumulative final. All exams and practicals are in person and proctored. Lowest scores are dropped for homework, lab worksheets, pre-lab quizzes, and in-class activities, so a short illness will not sink your grade.</p>
+<div class="wrap"><table><caption>Table 1. Point distribution</caption>
+<thead><tr><th scope="col">Component</th><th scope="col">How it counts</th><th scope="col">Points</th></tr></thead><tbody>
+<tr><th scope="row">Unit exams</th><td>6 exams × 75 points</td><td>450</td></tr>
+<tr><th scope="row">Homework</th><td>17 × 5 points; lowest 2 dropped</td><td>75</td></tr>
+<tr><th scope="row">Lab worksheets</th><td>16 × 15 points, lowest 2 dropped; lab safety is 12 points and not dropped</td><td>222</td></tr>
+<tr><th scope="row">Pre-lab quizzes</th><td>16 × 3 points; lowest 2 dropped</td><td>42</td></tr>
+<tr><th scope="row">Lab practicals</th><td>Gram stain (25) and streak plate (12)</td><td>50</td></tr>
+<tr><th scope="row">In-class participation</th><td>23 activities × 3 points; lowest 2 dropped</td><td>63</td></tr>
+<tr><th scope="row">Pathogen project</th><td>3 pathogens; interview, kill chart, infographic</td><td>60</td></tr>
+<tr><th scope="row">Dichotomous key</th><td>Built from known-lab results</td><td>16</td></tr>
+<tr><th scope="row">Bacterial unknown</th><td>Short final presentation</td><td>22</td></tr>
+<tr><th scope="row">Total</th><td>Extra credit: up to 20 points for tutoring or office-hour visits</td><td>1,000</td></tr></tbody></table></div>
+<p class="mu">Note. Grade scale: A 90–100%, B 80–89.4%, C 70–79.4%, D 60–69.4%, F below 59.4%. Adapted from the course syllabus (Shaffer-McCarthy, 2026).</p>
+</details>
+
+<details class="sec" id="policies"><summary>Syllabus, schedule, and policies</summary>
+<p>Your full syllabus, current-term schedule, and due dates are in <a href="https://canvas.morainevalley.edu/">Canvas</a>. Highlights:</p>
+<ul>
+<li><b>Lab safety:</b> Treat every organism as a possible pathogen. Wear your lab coat, long pants, closed-toe shoes, and safety glasses. Never eat, drink, or use your phone in lab, and never remove cultures from the lab.</li>
+<li><b>Attendance:</b> Lab attendance is mandatory. Tell your instructor about an absence as soon as you can.</li>
+<li><b>Late work:</b> Documented excuses are handled with your instructor. Unexcused late work loses 5% per day. In-class activities have no make-ups.</li>
+<li><b>Academic integrity:</b> Discuss lab answers with lab mates, but write them in your own words. Using AI is fine for studying, but presenting it as your own work is a violation.</li>
+<li><b>Access and support:</b> Contact the Center for Disability Services early, because accommodations are not retroactive. Free tutoring is available through the Academic Skills Center.</li>
+<li><b>Materials:</b> Free OpenStax textbook, lab manual, lab coat, gloves, and glasses (covered by course fees), plus a dark Sharpie and a bag. Bring a web-enabled device for Poll Everywhere.</li>
+</ul>
+</details>
+
+<details class="sec" open id="refs"><summary>References and resources</summary>
+<p class="mu">Reference list follows APA Style, 7th edition. Entries marked [VERIFY] need a check before semester use.</p>
+<p class="ref">Hackett, &amp; Renfree. (2025). <i>Introductory microbiology labs: Staining, culturing &amp; differentiating microbes</i> (6th ed.). [VERIFY: authors’ initials and publisher]</p>
+<p class="ref">Parker, N., Schneegurt, M., Thi Tu, A.-H., Forster, B. M., &amp; Lister, P. (2016). <i>Microbiology</i>. OpenStax. <a href="https://openstax.org/details/microbiology">https://openstax.org/details/microbiology</a> [VERIFY: edition year; last updated 2025]</p>
+<p class="ref">Shaffer-McCarthy, E. (2026). <i>BIO 119-009: Introductory microbiology syllabus</i> [Course syllabus]. Moraine Valley Community College.</p>
+<p><b>AI disclosure.</b> Anthropic’s Claude (Anthropic, 2026) helped draft and structure this page; the instructor should review all content. Textbook content is licensed by OpenStax under CC BY 4.0 [VERIFY].</p>
+<p class="ref">Anthropic. (2026). <i>Claude Sonnet 5.5</i> [Large language model]. https://claude.ai</p>
+</details>
+</main>
+<footer>BIO 119 Introductory Microbiology · Moraine Valley Community College · Biology · In person: 3 hours lecture and 3 hours lab each week for 16 weeks.</footer>
+
+<script>
+const U=[["Intro to Microbiology","#43a047"],["Microbial Diversity","#1976d2"],["Microbial Molecular Biology","#e65100"],["Microbial Growth and Growth Control","#7b1fa2"],["Microbes as Pathogens & Innate Immune System Defense","#00838f"],["Adaptive Immune System & Diseases of the Immune System","#c2185b"]];
+// unit, title, subtitle, description, key terms, activity title, activity text, lab title, lab text
+const W=[
+[0,"An invisible world","Ch 1–2: Microbes and how we see them","Meet the microbes that shape health, disease, and everyday life. You will trace the history of microbiology and learn how microscopes reveal cells too small to see.","microbe;germ theory;magnification;resolution","Microbes in my day","Sort everyday examples of microbes as helpful or harmful.","Lab safety and bacteria in the environment","Review safety rules, sample surfaces, and set up cultures."],
+[0,"Cell structure","Ch 3: Parts of the cell","Compare the structures of prokaryotic and eukaryotic cells. You will connect each part to its job and learn why those differences matter for treating infections.","prokaryote;eukaryote;cell wall;membrane","Label the cell","Match cell parts to their functions and to a cell type.","Aseptic technique","Practice transferring microbes without contamination."],
+[0,"Unit 1 review","Ch 1–3: Putting it together","Review microbes, microscopy, and cell structure, and sharpen your lab skills. You will finish microscope work and practice streak plates before the unit exam.","review;streak plate;microscopy","Unit 1 study guide","Build a one-page study guide from the unit objectives.","The microscope and streak practice","Finish microscope work and practice isolation streaks."],
+[1,"Prokaryotic and eukaryotic diversity","Ch 4–5: Bacteria, archaea, fungi, protozoa, algae, helminths","Survey the major groups of cellular microbes and what sets them apart. You will focus on members that cause disease and begin staining techniques.","bacteria;archaea;fungi;protozoa;helminth","Group the microbes","Classify mystery microbes by shape, size, and cell type.","Simple stain and isolation streak","Prepare simple stains and take the streak-plate practical."],
+[1,"Acellular pathogens","Ch 6: Viruses, viroids, and prions","Learn how viruses, viroids, and prions cause disease without being cells. You will also review Chapters 4–6 and practice Gram staining.","virus;viroid;prion;capsid","Cell or not?","Decide which features separate cells from acellular agents.","Gram stain and pond water diversity","View stained slides and sort the organisms in pond water."],
+[2,"Microbial metabolism","Ch 8: How microbes get energy","Follow how microbes capture and use energy through enzymes and metabolic pathways. You will see how these pathways help identify bacteria.","enzyme;ATP;fermentation;respiration","Trace the pathway","Follow glucose through respiration and fermentation.","Motility","Set up and read motility tests."],
+[2,"Biochemistry of the genome","Ch 10: DNA, RNA, and protein","Explore how genetic information is stored, copied, and turned into proteins. You will connect these steps to how microbes grow and change.","DNA;RNA;replication;transcription;translation","Build a protein","Transcribe and translate a short gene sequence.","Bacteria in yogurt","Examine the microbes in yogurt and take the Gram stain practical."],
+[2,"Microbial genetics","Ch 11: Mutation and gene transfer","See how mutations and gene transfer change microbes. You will apply these ideas to genetic engineering and drug resistance.","mutation;plasmid;conjugation;recombination","Gene transfer scenarios","Predict outcomes of three gene transfer cases.","Genetic engineering","Transform bacteria and interpret the results."],
+[3,"Microbial growth and its control","Ch 9, 13: Growth conditions and control methods","Learn what microbes need to grow and how we limit them. You will compare disinfectants, antiseptics, osmotic pressure, and oxygen needs using lab data.","growth curve;disinfectant;antiseptic;aerobe","Read the growth curve","Interpret a growth curve and pick a control method.","Controlling growth","Test alcohol, disinfectants, osmotic pressure, and oxygen needs."],
+[3,"Antimicrobial drugs","Ch 14: Treating infections","Compare how antimicrobial drugs work and why resistance emerges. You will use lab data to judge which drug works best.","antibiotic;resistance;spectrum;zone of inhibition","Pick the drug","Choose a drug for a case using spectrum and resistance data.","Effectiveness of antimicrobial drugs","Measure zones of inhibition and compare drugs."],
+[4,"Pathogenicity","Ch 15: How microbes cause disease","Learn how pathogens enter hosts, evade defenses, and cause damage. You will see how virulence factors alter the body’s balance.","virulence;toxin;adhesion;infection","Virulence detectives","Match virulence factors to the damage they cause.","UV light","Test how UV exposure affects microbial growth."],
+[4,"Epidemiology and innate defenses","Ch 16–17: Disease spread and first-line defenses","Study how diseases spread and how to stop them. You will also see how the body’s innate defenses respond first.","epidemiology;transmission;phagocyte;inflammation","Outbreak data","Read case data to find the source and route of an outbreak.","Bacterial known","Run tests on a known bacterium to build your key."],
+[5,"Adaptive immunity","Ch 18: Specific host defenses","Learn how B cells and T cells recognize and remember specific invaders. You will also start identifying your unknown bacterium.","antigen;antibody;B cell;T cell","Immune response timeline","Order the steps of a primary and secondary response.","Receive your unknown","Streak, slant, and plate your unknown bacterium."],
+[5,"Adaptive immunity and immune disease","Ch 18–19: When defenses go wrong","Connect adaptive immunity to allergies and autoimmune disease. In lab you will observe and stain your unknown.","hypersensitivity;autoimmunity;vaccine","Allergy or autoimmunity?","Sort case studies by type of immune disorder.","Unknown: stain and observe","Gram stain your unknown and record observations."],
+[5,"Diseases of the immune system","Ch 19: Immune disorders","Explore immunodeficiency, allergy, and autoimmune disease and how they are diagnosed. In lab you will choose confirmation tests using your dichotomous key.","immunodeficiency;allergy;autoimmune","Test or not?","Use a dichotomous key to pick the next test.","Unknown: confirmation tests","Run the tests your key suggests."],
+[5,"Unknown presentation","Exam 6 and final presentations","Wrap up your bacterial unknown and share your evidence-based identification. You will also take the final unit exam.","dichotomous key;evidence;presentation","Presentation rehearsal","Practice your results talk and give peer feedback.","Unknown wrap-up","Finalize your identification and prepare slides."]];
+const EX=[[2,"Ch 1–3"],[4,"Ch 4–6"],[7,"Ch 8, 10, 11"],[9,"Ch 9, 13, 14"],[11,"Ch 15–17"],[15,"Ch 18–19"]];
+const $=s=>document.querySelector(s),esc=s=>s.replace(/&/g,"&amp;");
+const pad=n=>String(n).padStart(2,"0");
+const wk=i=>`Week ${i+1}`;
+const tag=u=>`<span class="tag">Unit ${u+1}: ${esc(U[u][0])}</span>`;
+function plo(i){return i<12?"PLO 2–3":"PLO 1–3"}
+function card(u,html,txt,cls){return `<article class="card ${cls||""}" style="--c:${U[u][1]}" data-u="${u}" data-t="${txt.toLowerCase()}">${html}</article>`}
+function open(f,l){return `<p class="go"><a class="btn" href="${f}" aria-label="${l}">Open</a></p>`}
+let wh="",ah="",lh="";
+W.forEach((w,i)=>{
+ const n=i+1,p=pad(n);
+ wh+=card(w[0],`<div class="row"><span class="num">Week ${n}</span><span class="ob" title="Common Learning Outcome 5">CLO 5</span><span class="ob">${plo(i)}</span></div>${tag(w[0])}<h3>${w[1]}</h3><p class="mu">${w[2]}</p><p>${w[3]}</p><div class="row" aria-label="Key terms">${w[4].split(";").map(k=>`<span class="kt">${k}</span>`).join("")}</div><p class="mu">Estimated time: about 14 hours (6 in class, 8 of study)</p><p class="go"><a class="btn" href="lesson${p}.html" aria-label="Open week ${n} lesson">Open week</a><a class="l" href="activity${p}.html">✍️ Activity ${n}</a><a class="l" href="lab${p}.html">🔬 Lab ${n}</a></p>`,w.join(" "));
+ EX.forEach((e,k)=>{if(e[0]===i)wh+=card(w[0],`<div class="row"><span class="num">📝 Exam ${k+1}</span></div>${tag(w[0])}<h3>Unit ${w[0]+1} exam</h3><p class="mu">${e[1]}</p><p>Proctored, in person. Review your unit objectives and activities first.</p>`,`exam ${k+1} ${e[1]} unit ${w[0]+1}`,"ex")});
+ ah+=card(w[0],`<div class="row"><span class="num">✍️ Activity ${n}</span><span class="mu">Week ${n}</span></div>${tag(w[0])}<h3>${w[5]}</h3><p>${w[6]}</p>`+open(`activity${p}.html`,`Open activity ${n}`),w[5]+w[6]+" activity");
+ lh+=card(w[0],`<div class="row"><span class="num">🔬 Lab ${n}</span><span class="mu">Week ${n}</span></div>${tag(w[0])}<h3>${w[7]}</h3><p>${w[8]}</p>`+open(`lab${p}.html`,`Open lab ${n}`),w[7]+w[8]+" lab");
+});
+$("#wg").innerHTML=wh;$("#ag").innerHTML=ah;$("#lg").innerHTML=lh;
+const rng=U.map((_,u)=>{const a=W.map((w,i)=>w[0]===u?i+1:0).filter(Boolean);return [a[0],a[a.length-1]]});
+$("#bars").innerHTML=U.map((x,u)=>`<button type="button" data-u="${u}" aria-pressed="false" style="--c:${x[1]};flex-grow:${rng[u][1]-rng[u][0]+1}"><b>Unit ${u+1}</b>${esc(x[0])}<small>Weeks ${rng[u][0]}–${rng[u][1]}</small></button>`).join("");
+$("#uf").innerHTML='<option value="">All units</option>'+U.map((x,u)=>`<option value="${u}">Unit ${u+1}: ${esc(x[0])}</option>`).join("");
+function apply(){const q=$("#q").value.trim().toLowerCase(),f=$("#uf").value;let n=0;
+ document.querySelectorAll(".card").forEach(c=>{const ok=(!f||c.dataset.u===f)&&(!q||c.dataset.t.includes(q));c.classList.toggle("hidden",!ok);if(ok)n++});
+ document.querySelectorAll("#bars button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.u===f)));
+ $("#cnt").textContent=n+" cards shown"}
+$("#q").oninput=apply;$("#uf").onchange=apply;
+$("#bars").onclick=e=>{const b=e.target.closest("button");if(!b)return;$("#uf").value=$("#uf").value===b.dataset.u?"":b.dataset.u;apply()};
+apply();
+const th=$("#th");
+function setT(t){document.documentElement.dataset.theme=t;th.setAttribute("aria-pressed",String(t==="dark"));th.textContent=t==="dark"?"Light mode":"Dark mode";try{localStorage.setItem("bio119-theme",t)}catch(e){}}
+setT(document.documentElement.dataset.theme==="dark"?"dark":"light");
+th.onclick=()=>setT(document.documentElement.dataset.theme==="dark"?"light":"dark");
+</script>
+</body>
+</html>
